@@ -13,6 +13,9 @@ import { ACCESS_TOKEN_EXPIRES_IN } from "../../constants/tokensExpireIn";
 
 export const refreshToken: RequestHandler = async (req, res, next) => {
   const { cookie } = req.headers;
+
+  console.log("refreshing token...");
+
   try {
     if (!cookie) {
       throw createHttpError(401, "Missing cookies.");

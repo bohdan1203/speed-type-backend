@@ -65,6 +65,8 @@ export const logIn: RequestHandler<
     existingUser.refreshToken = refreshToken!;
     await existingUser.save();
 
+    console.log("login, refresh", refreshToken);
+
     res.cookie("refreshToken", refreshToken, REFRESH_TOKEN_COOKIE_OPTIONS);
 
     res.status(200).json({
