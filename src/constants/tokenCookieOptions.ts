@@ -5,6 +5,4 @@ export const REFRESH_TOKEN_COOKIE_OPTIONS: CookieOptions = {
   httpOnly: true,
   secure: true,
   sameSite: "strict",
-  domain: "localhost",
-  path: "/",
 };
