@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://speed-type-frontend.render.com",
+    origin: "https://speed-type-frontend.onrender.com",
     credentials: true,
   })
 );
