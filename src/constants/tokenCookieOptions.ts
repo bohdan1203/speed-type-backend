@@ -5,6 +5,6 @@ export const REFRESH_TOKEN_COOKIE_OPTIONS: CookieOptions = {
   httpOnly: true,
   secure: true,
   sameSite: "strict",
-  domain: "speed-type-frontend.onrender.com",
+  domain: ".onrender.com",
   path: "/",
 };
